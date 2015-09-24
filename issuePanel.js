@@ -4,6 +4,7 @@ var Settings = (function () {
     }
     Settings.prototype.saveForm = function () {
         var url = document.location.toString();
+        alert(url);
         var result = this.checkURL(url);
         if (result == "" || result == url) {
             var authorization = this.makeBasicAuthentication(document.forms['configure']['user'].value, document.forms['configure']['password'].value);
