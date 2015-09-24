@@ -39,6 +39,10 @@ var Settings = (function () {
         this.owner = pairs[1];
         this.repository = pairs[2];
         this.authorization = pairs[3];
+        alert(this.title);
+        alert(this.owner);
+        alert(this.repository);
+        alert(this.authorization);
         var settings = { owner: this.owner, repository: this.repository, authorization: this.authorization, title: this.title };
         localStorage.setItem("IssuePanel.settings", JSON.stringify(settings));
     };
